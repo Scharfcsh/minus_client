@@ -71,14 +71,14 @@ function LobbyContent() {
     return () => {
       cleanup?.();
     };
-  }, [name, router, connectAndSetup]);
+  }, [name]);
 
   // Navigate to game when it starts
   useEffect(() => {
     if (gameState) {
       router.push(`/room/${roomId}`);
     }
-  }, [gameState, roomId, router]);
+  }, [gameState, roomId]);
 
   const handleCopyCode = () => {
     if (roomId) {

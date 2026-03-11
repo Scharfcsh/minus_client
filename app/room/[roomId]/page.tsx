@@ -19,7 +19,7 @@ export default function RoomPage() {
     if (!gameState && !roomId) {
       router.push('/');
     }
-  }, [gameState, roomId, router]);
+  }, [gameState, roomId]);
 
   if (!gameState) {
     return (
